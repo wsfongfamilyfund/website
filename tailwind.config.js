@@ -9,13 +9,14 @@ module.exports = {
     extend: {
       colors: {
         cream: "#F5F5F0",
-        "dark-green": "#1B3B2B",
+        "dark-green": "#2D3E2F",
+        "dark-green-btn": "#374738",
         "sage-green": "#8FA89B",
         "warm-gold": "#D4AF37",
       },
       fontFamily: {
-        serif: ["Georgia", "Cambria", "serif"],
-        sans: ["system-ui", "-apple-system", "sans-serif"],
+        serif: ["var(--font-serif)", "Georgia", "serif"],
+        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
       },
     },
   },
