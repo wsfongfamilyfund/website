@@ -100,7 +100,7 @@ export default function Home() {
               href="/apply"
               className="inline-flex items-center justify-center px-7 py-3 min-h-12 font-sans text-base font-medium text-[#F5F5F0] bg-[#374738] rounded-lg shadow-md hover:bg-[#4A5D4B] transition duration-200"
             >
-              Apply for 2026 Grant
+              Apply for 2027 Grant
             </Link>
 
             <a
