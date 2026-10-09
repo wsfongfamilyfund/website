@@ -64,7 +64,7 @@ export default function Home() {
         >
           <div className="relative max-w-sm md:max-w-md w-11/12 max-h-[80vh] flex flex-col items-center">
             <img
-              src="https://www.wsfongfamilyfund.com/hero.jpg"
+              src="/hero.jpg"
               alt="W.S. Fong & Family"
               className="w-full h-auto max-h-[75vh] object-contain rounded-2xl shadow-2xl"
             />
@@ -149,7 +149,7 @@ export default function Home() {
               <div className="flex-1 bg-[#F5F5F0] relative overflow-hidden flex items-center justify-center border-r border-black/10 shadow-[inset_-10px_0_20px_rgba(0,0,0,0.06)]">
                 {leftPageNum ? (
                   <img
-                    src={`https://www.wsfongfamilyfund.com/report/${leftPageNum}.png`}
+                    src={`/report/${leftPageNum}.png`}
                     alt={`Page ${leftPageNum}`}
                     className="w-full h-full object-contain select-none"
                   />
@@ -162,7 +162,7 @@ export default function Home() {
               <div className="flex-1 bg-[#F5F5F0] relative overflow-hidden flex items-center justify-center shadow-[inset_10px_0_20px_rgba(0,0,0,0.06)]">
                 {rightPageNum ? (
                   <img
-                    src={`https://www.wsfongfamilyfund.com/report/${rightPageNum}.png`}
+                    src={`/report/${rightPageNum}.png`}
                     alt={`Page ${rightPageNum}`}
                     className="w-full h-full object-contain select-none"
                   />
