@@ -32,6 +32,7 @@ export default function ApplyPage() {
   const [npGrantAmount, setNpGrantAmount] = useState("");
   const [npProgramDesc, setNpProgramDesc] = useState("");
   const [npCharityNav990, setNpCharityNav990] = useState("");
+  const [npSustainability, setNpSustainability] = useState("");
   const [npFamilyReferrer, setNpFamilyReferrer] = useState("");
   const [npHearAboutUs, setNpHearAboutUs] = useState("");
 
@@ -74,6 +75,9 @@ export default function ApplyPage() {
         formData.append("entry.630859756", npGrantAmount.trim());
         formData.append("entry.1613015835", npProgramDesc.trim());
         formData.append("entry.1089095067", npCharityNav990.trim());
+        if (npSustainability.trim()) {
+          formData.append("entry.1285983800", npSustainability.trim());
+        }
         if (npFamilyReferrer.trim()) {
           formData.append("entry.1164483795", npFamilyReferrer.trim());
         }
@@ -678,7 +682,32 @@ export default function ApplyPage() {
                   />
                 </div>
 
-                {/* 11. Family Referrer Name (Optional) & 12. How Did You Hear About Us? */}
+                {/* 11. Financial Sustainability & Revenue Model */}
+                <div>
+                  <label
+                    htmlFor="npSustainability"
+                    className="block text-sm font-medium text-[#2D3E2F] mb-1"
+                  >
+                    Financial Sustainability &amp; Revenue Model (Optional)
+                  </label>
+                  <p className="text-xs text-[#2D3E2F]/70 mb-2">
+                    Please describe how your organization plans to sustain its
+                    programs over the long term, including any non-donation
+                    revenue sources (such as earned income, fee-for-service
+                    programs, social enterprise activities, memberships,
+                    endowments, or multi-year institutional/government grants).
+                  </p>
+                  <textarea
+                    id="npSustainability"
+                    rows={3}
+                    value={npSustainability}
+                    onChange={(e) => setNpSustainability(e.target.value)}
+                    placeholder="Share your long-term sustainability plan or any earned/alternative revenue streams..."
+                    className="w-full rounded-lg border border-[#8FA89B]/50 bg-[#F5F5F0]/50 px-4 py-2.5 text-[#2D3E2F] placeholder:text-[#2D3E2F]/40 focus:border-[#374738] focus:bg-white focus:outline-none focus:ring-1 focus:ring-[#374738]"
+                  />
+                </div>
+
+                {/* 12. Family Referrer Name (Optional) & 13. How Did You Hear About Us? */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div>
                     <label
@@ -765,3 +794,4 @@ export default function ApplyPage() {
     </main>
   );
 }
+
